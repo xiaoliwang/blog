@@ -170,7 +170,8 @@ curl -L https://api.github.com/repos/iissnan/hexo-theme-next/tarball | tar -zxv 
 git clone https://github.com/iissnan/hexo-theme-next themes/next
 
 # 3. 使用 git submodule 获取最新版本(如果项目已经用 git 进行管理)
-git submodule add https://github.com/theme-next/hexo-theme-next themes/next
+# 首先 fork 一个版本到你的账号下
+git submodule add git://github.com/${user-name}/hexo-theme-next themes/next
 ```
 
 然后修改配置文件
